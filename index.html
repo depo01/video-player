@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./css/stylo.css">
+</head>
+<body>
+    <h1>Video Player</h1>
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="./images/poster.jpg"  src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="400px"></video>
+            <div class="player-overlay">
+                <h2 class="player-title">Musica para Codificar</h2>
+                <div class="player-actions">
+                    <button class="button" id="back10s" aria-label="Retroceder 10s" title="Retroceder 10s"></button>
+                    <button class="button" id="play" aria-label="Reproducir"title="Reproducir"></button>
+                    <button hidden class="button" id="pausa" aria-label="Pausar"title="Pausar"></button>
+                    <button class="button" id="next10s" aria-label="Avanzar 10s"title="Avanzar 10s"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" value="0" step="1">
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
